@@ -20,6 +20,10 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    -- copy to buffer
+    ["<F3>"] = {"<cmd>%y+<cr>", desc = "Copy to clipboard"},
+    -- compile cpp code
+    ["<F5>"] = {"<cmd>w <bar> !g++ -std=c++17 -Daadmi1234 -O2 -Wall % -o sol <cr>", desc = "Compile C++ code"}
   },
   t = {
     -- setting a mapping to false will disable it
